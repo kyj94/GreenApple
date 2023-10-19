@@ -6,6 +6,8 @@
 <head>
     <meta charset="UTF-8">
     <title>GreenApple</title>
+    <link rel="stylesheet" href="http://localhost:9001/css/index.css">
+    <script src="http://localhost:9001/js/jquery-3.6.4.min.js"></script>
 </head>
 
 <body>
