@@ -3,7 +3,13 @@
 	margin: auto;
 }
 
-ul li a {
+ul, li {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+a {
 	text-decoration: none;
 	color: black;
 }
@@ -25,9 +31,10 @@ li i {
 	position: relative;
 }
 
-#inner, #category {
+#inner {
 	height: auto;
 	width: 60%;
+	margin: 0 auto;
 }
 
 #logo {
@@ -40,7 +47,7 @@ li i {
 	padding-top: 20px;
 }
 
-p {
+#inner > p {
 	font-size: 55px;
 	font-weight: bold;
 	text-align: center;
@@ -58,15 +65,15 @@ p {
 	padding-top: 10px;
 }
 
-#log ul {
+#log > ul {
 	list-style-type: none;
 	text-align: right;
 }
 
-#log ul li {
+#log > ul > li {
 	display: inline;
 	padding: 0px 9px;
-	font-size: 17px;
+	font-size: 15px;
 	font-weight: bold;
 }
 
@@ -74,77 +81,43 @@ p {
 	border-right: 1px solid #8C5866;
 }
 
-#category {
-	padding: 10px 0px;
-	font-size: 20px;
+#categoryDiv {
+	margin: 10px 0;
+	padding: 5px 10px;
 	text-align: center;
 }
 
-#category ul {
-	list-style-type: none;
-	text-align: center;
+#categoryDiv #categoryUl {
+	display: flex;
+	justify-content: center;
 }
 
-#category > ul > li {
-	display: inline;
-	padding: 0px 10px;
-	font-size: 20px;
-	position: relative;
+#categoryUl > li {
+	width: 80px;
+	/*float: left;*/
+	display: inline-block;
+	line-height: 30px;
 }
 
-#category > ul > li:first-child {
-	background: #A0C3D9;
-	padding:10px;
-	text-align: center;
-}
-
-#category > ul > li:first-child i {
-	padding-left: 7px;
-}
-
-.detail {
+.sub-category {
 	display: none;
-	width: 100px;
-	padding: 5px 0;
+	width: 80px;
+	margin-top: 10px;
+	z-index: 99;
 	position: absolute;
-	/*border: 1px solid #8C5866;*/
-	background-color: #ffffff;
-	list-style-type: none;
-	left: 0;
-	right: 0;
-	text-align: center;
+	border: 1px solid #F2C4D0;
+	background: #ffffff;
+	border-radius: 0px 0px 7px 7px;
 }
 
-.detail li {
-	display: block;
-	padding: 5px 0;
-}
-
-#category li:hover .detail {
+#categoryUl > li:hover .sub-category {
 	display: block;
 }
 
-
-#category-all ul > li {
-	padding: 10px 0;
-	margin: 0 10px;
-	font-size: 20px;
-	position: relative;
-}
-
-#category-all ul li ul {
-	/*display: none;*/
+hr {
 	position: absolute;
-	left: 0;
-	top: 100%;
-	background: #fff;
-}
-
-#category-all ul li:hover ul {
-	display: block;
-}
-
-#category-all ul li ul li {
-	display: inline;
-	margin-right: 10px;
+	top: 295px;
+	margin-top: 10px;
+	border: 1px solid #F2C4D0;
+	z-index: 999;
 }
