@@ -157,6 +157,7 @@ hr {
 		category-all
 ***************************************/
 #category-all {
+	display: none;
 	width: 60%;
 	position: absolute;
 	z-index: 100;
