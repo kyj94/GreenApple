@@ -28,7 +28,6 @@ li i {
 }
 
 .inner {
-	border: 1px solid red; /*위치 확인용*/
 	height: auto;
 	width: 60%;
 	margin: 0 auto;
@@ -158,12 +157,46 @@ hr {
 		category-all
 ***************************************/
 #category-all {
+	display: none;
 	width: 60%;
-	position: relative;
+	position: absolute;
 	z-index: 100;
-	top: 240px;
-	left: 5px;
+	top: 271px;
+	left: 50%;
+	transform: translateX(-50%);
 	border: 1px solid #F2C4D0;
 	border-radius: 0px 0px 7px 7px;
 	background: rgba(255, 255, 255);
+}
+
+#category-all > ul > li {
+	display: block;
+	padding: 20px 0 5px 33px;
+	position: relative;
+}
+
+#category-all > ul > li:last-child {
+	padding-bottom: 20px;
+}
+
+#category-all > ul > li > a {
+	font-size: 20px;
+	font-weight: 600;
+}
+
+#category-all ul ul {
+	display: flex;
+	position: absolute;
+	bottom: 4px;
+	left: 150px;
+	width: 85%;
+}
+
+#category-all ul ul li {
+	display: inline-block;
+	width: 100px;
+}
+
+#category-all > ul > li:last-child li {
+	padding-bottom: 15px;
 }
