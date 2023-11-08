@@ -58,9 +58,7 @@
     </div>
 
     <%--footer 부분--%>
-    <div id = "footer">
-    </div>
-
+    <jsp:include page="footer.jsp"></jsp:include>
 
 </body>
 </html>
