@@ -23,16 +23,16 @@
             <div class = "inner">
                 <div id = "log">
                     <ul>
-                        <li>로그인</li>
-                        <li>회원가입</li>
-                        <li>상품검색</li>
+                        <li><a href="http://localhost:9001/login">로그인</a></li>
+                        <li><a href=”#”>회원가입</a></li>
+                        <li><a href=”#”>상품검색</a></li>
                     </ul>
                 </div>
 
                 <div id = "logo">
-                    <img src="http://localhost:9001/images/logo.png">
+                    <a href="http://localhost:9001"><img src="http://localhost:9001/images/logo.png"></a>
                 </div>
-                <p>Green Apple</p>
+                <a href="http://localhost:9001"><p>Green Apple</p></a>
             </div>
         </div>
 
@@ -89,8 +89,6 @@
             </div>
         </div>
 
-        <hr>
-
         <div id ="category-all">
             <ul>
                 <li><a href="#">전체상품</a></li>
@@ -121,6 +119,9 @@
                     </ul>
             </ul>
         </div>
+
+        <hr>
+
     </div>
 </body>
 </html>
