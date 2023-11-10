@@ -24,7 +24,7 @@
             <ul>
                 <li><input type="text" name="mid" id="id" placeholder="아이디" value="${cookie.user_check.value}" placeholder="아이디"></li>
                 <li><input type="password" name="pass" id="pass" placeholder="비밀번호"></li>
-                <li><button type="button" id="btnLogin" class="btn-submit" disabled>로그인</button></li>
+                <li><button type="button" id="btnLogin">로그인</button></li>
                 <li>
                     <a href="http://localhost:9001/join">회원가입</a>
                     <a href="#">아이디 / 비밀번호 찾기</a>
