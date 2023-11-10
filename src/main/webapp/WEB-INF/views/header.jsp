@@ -24,7 +24,7 @@
                 <div id = "log">
                     <ul>
                         <li><a href="http://localhost:9001/login">로그인</a></li>
-                        <li><a href=”#”>회원가입</a></li>
+                        <li><a href="http://localhost:9001/join">회원가입</a></li>
                         <li><a href=”#”>상품검색</a></li>
                     </ul>
                 </div>
