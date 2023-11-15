@@ -198,8 +198,8 @@ li i {
 
 
 hr {
-	position: absolute;
-	top: 271px;
+	/*position: absolute;
+	top: 271px;*/
 	border: 1px solid #F2C4D0;
 	z-index: 999;
 }
