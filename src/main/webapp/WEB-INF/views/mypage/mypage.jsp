@@ -65,55 +65,52 @@
                 </ul>
             </div>
         </div>
-    </div>
-
-
-
-
-
-
-
 
         <div id="orderState">
-            <p>나의 주문처리 현황<span>(최근 3개월 기준)</span></p>
-            <ul id="state">
-                <li>
-                    <strong>입금전</strong>
-                    <a href="#">0</a>
-                </li>
+            <div id="orderTitle">
+                <p><span style="font-weight: bold">나의 주문처리 현황</span> (최근 3개월 기준)</p>
+            </div>
 
-                <li>
-                    <strong>배송준비중</strong>
-                    <a href="#">0</a>
-                </li>
+            <div id="state">
+                <ul id="stateList">
+                    <li>
+                        <strong>입금전</strong>
+                        <a href="#">0</a>
+                    </li>
 
-                <li>
-                    <strong>배송중</strong>
-                    <a href="#">0</a>
-                </li>
+                    <li>
+                        <strong>배송준비중</strong>
+                        <a href="#">0</a>
+                    </li>
 
-                <li>
-                    <strong>배송완료</strong>
-                    <a href="#">0</a>
-                </li>
-            </ul>
+                    <li>
+                        <strong>배송중</strong>
+                        <a href="#">0</a>
+                    </li>
 
-            <ul id="cs">
-                <li>
-                    <strong>취소 : </strong>
-                    <a href="#">0</a>
-                </li>
+                    <li>
+                        <strong>배송완료</strong>
+                        <a href="#">  0</a>
+                    </li>
+                </ul>
 
-                <li>
-                    <strong>교환 : </strong>
-                    <a href="#">0</a>
-                </li>
+                <ul id="cs">
+                    <li>
+                        <strong>취소 : </strong>
+                        <a href="#">0</a>
+                    </li>
 
-                <li>
-                    <strong>반품 : </strong>
-                    <a href="#">0</a>
-                </li>
-            </ul>
+                    <li>
+                        <strong>교환 : </strong>
+                        <a href="#">0</a>
+                    </li>
+
+                    <li>
+                        <strong>반품 : </strong>
+                        <a href="#">0</a>
+                    </li>
+                </ul>
+            </div>
         </div>
 
         <div id="menu">
@@ -188,8 +185,7 @@
                 </li>
             </ul>
         </div>
-
-
+    </div> <%--loginInner--%>
 
     <%--footer 부분--%>
     <div class="footer-wrapper">
