@@ -8,7 +8,7 @@
     <meta charset="UTF-8">
     <link href="http://localhost:9001/images/logo.png" rel="shortcut icon" type="image/x-icon">
     <title>GreenApple</title>
-    <link rel="stylesheet" href="http://localhost:9001/css/mypage.css">
+    <link rel="stylesheet" href="http://localhost:9001/css/admin.css">
     <script src="http://localhost:9001/js/jquery-3.6.4.min.js"></script>
 </head>
 
@@ -17,54 +17,61 @@
     <jsp:include page="../header.jsp"></jsp:include>
 
     <%--content--%>
-    <div id="loginInner">
-        <p id="title">마이 페이지</p>
+    <div id="inner">
+        <p id="title">관리자 페이지</p>
 
-        <div id="contentPoint">
-            <div id="pointUse">
-                <ul class="point">
-                    <li>
-                        <p>등급</p>
-                        <strong>오리지널</strong>
-                        <a href=#>조회</a>
-                    </li>
+        <div id="record">
+            <div id="date">
+                <div id="buttonDiv">
+                    <button id="today">오늘</button>
+                    <button id="weekly">1주일간</button>
+                    <button id="monthly">1달간</button>
+                    <button id="yearly">1년간</button>
+                    <button id="month">이번달</button>
+                    <button id="year">올해</button>
+                    <button id="etc">기간설정</button>
+                </div>
 
-                    <li>
-                        <p>가용적립금</p>
-                        <strong>원</strong>
-                        <a href=#>조회</a>
-                    </li>
-
-                    <li>
-                        <p>사용적립금</p>
-                        <strong>원</strong>
-                        <a href=#>조회</a>
-                    </li>
-                </ul>
+                <div id="calender">
+                    <input type="date" id="start"/> ~ <input type="date" id="end"/>
+                    <button id="select" style="background: #A0C3D9">선택</button>
+                    <button id="cancel" style="background: #A0C3D9">취소</button>
+                </div>
             </div>
 
-            <div id="pointCoupon">
-                <ul class="point">
+
+            <div id="sell">
+                <ul class="sell">
                     <li>
-                        <p>총적립금</p>
-                        <strong>원</strong>
-                        <a href=#>조회</a>
+                        <p>상품 판매금</p>
+                        <strong>0원</strong>
                     </li>
 
                     <li>
-                        <p>총주문</p>
-                        <strong>원(0회)</strong>
-                        <a href=#>조회</a>
+                        <p>상품 원가</p>
+                        <strong>0원</strong>
                     </li>
 
                     <li>
-                        <p>쿠폰</p>
-                        <strong>0장</strong>
-                        <a href=#>조회</a>
+                        <p>순수익</p>
+                        <strong>0원</strong>
                     </li>
                 </ul>
             </div>
         </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
 
         <div id="orderState">
             <div id="orderTitle">
@@ -185,7 +192,8 @@
                 </li>
             </ul>
         </div>
-    </div> <%--loginInner--%>
+
+    </div> <%--inner--%>
 
     <%--footer 부분--%>
     <div class="footer-wrapper">

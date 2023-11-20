@@ -14,7 +14,7 @@
 	font-size: 18px;
 }
 
-#loginInner {
+#inner {
 	/*border: 1px solid red;*/
 	margin: auto;
 	margin-top: 190px;
@@ -28,49 +28,66 @@ p#title {
 	margin-bottom: 20px;
 }
 
+button {
+	background: #F2C4D0;
+	border: none;
+	border-radius: 10px;
+	width: 80px;
+	height: 40px;
+	color: white;
+}
 
 /***************************************
-		contentPoint
+		record
 ***************************************/
-#contentPoint {
-	display: flex;
+#date {
+	text-align: right;
+}
+
+#record {
 	margin-bottom: 20px;
 }
 
-#pointUse, #pointCoupon {
-	flex: 1;
+#sell {
 	border: 1px solid #4f4f4f;
+	margin-top: 10px;
 	padding: 20px;
 }
 
-#pointUse {
-	border-right: none;
+#sell li:last-child p, #sell li:last-child strong {
+	color: red;
+	font-size: 25px;
+	margin-top: 5px;
+}
+
+#calender {
+	display: none;
 }
 
 /***************************************
-		pointUse
+		sell
 ***************************************/
-.point li {
+.sell li {
 	display: flex;
 	width: 100%;
 	padding-bottom: 10px;
 }
 
-.point li:last-child {
+.sell li:last-child {
 	padding-bottom: 0px;
 }
 
-.point li p {
+.sell li p {
 	width: 20%;
 	text-align: left;
 }
 
-.point li strong {
+.sell li strong {
 	width: 65%;
 	text-align: right;
 }
 
-.point li a {
+.sell li a {
 	border: 1px solid #999;
 	border-radius: 5px;
 	padding: 0.5px 3px;
