@@ -1,0 +1,186 @@
+@font-face {
+	font-family: 'omyu_pretty';
+	src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-01@1.0/omyu_pretty.woff2') format('woff2');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/***************************************
+		common
+***************************************/
+* {
+	margin: 0px;
+	font-family: 'omyu_pretty';
+	font-size: 18px;
+}
+
+#inner {
+	/*border: 1px solid red;*/
+	margin: auto;
+	margin-top: 190px;
+	margin-bottom: 200px;
+	width: 55%;
+}
+
+p#title {
+	font-size: 25px;
+	font-weight: 600;
+	margin-bottom: 20px;
+}
+
+button {
+	background: #F2C4D0;
+	border: none;
+	border-radius: 10px;
+	width: 80px;
+	height: 40px;
+	color: white;
+}
+
+/***************************************
+		record
+***************************************/
+#date {
+	text-align: right;
+}
+
+#record {
+	margin-bottom: 20px;
+}
+
+#sell {
+	border: 1px solid #4f4f4f;
+	margin-top: 10px;
+	padding: 20px;
+}
+
+#sell li:last-child p, #sell li:last-child strong {
+	color: red;
+	font-size: 25px;
+	margin-top: 5px;
+}
+
+#calender {
+	display: none;
+}
+
+/***************************************
+		sell
+***************************************/
+.sell li {
+	display: flex;
+	width: 100%;
+	padding-bottom: 10px;
+}
+
+.sell li:last-child {
+	padding-bottom: 0px;
+}
+
+.sell li p {
+	width: 20%;
+	text-align: left;
+}
+
+.sell li strong {
+	width: 65%;
+	text-align: right;
+}
+
+.sell li a {
+	border: 1px solid #999;
+	border-radius: 5px;
+	padding: 0.5px 3px;
+}
+
+
+/***************************************
+		orderState
+***************************************/
+#orderState {
+	margin-bottom: 20px;
+}
+
+#orderState #orderTitle p {
+	border: 1px solid #999;
+	background: #dcdcdc;
+	padding: 10px;
+}
+
+#orderState #state {
+	border: 1px solid #999;
+	border-top: none;
+	display: flex;
+	padding-bottom: 10px;
+	align-items: center;
+}
+
+#stateList {
+	display: flex;
+	align-items: center;
+	width: 85%;
+	height: 100px;
+}
+
+#stateList li {
+	flex: 1;
+	border-right: 1px solid #999;
+	height: 70%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+#state #cs {
+	margin-left: 20px;
+}
+
+#state #cs li {
+	margin-bottom: 5px;
+}
+
+#state #cs li strong {
+	font-weight: normal;
+}
+
+#state #cs li a {
+	font-weight: bold;
+	padding-left: 5px;
+}
+
+
+/***************************************
+		menu
+***************************************/
+#menu {
+	display: flex;
+}
+
+#contentMenu {
+	display: flex;
+	flex-wrap: wrap;
+
+}
+
+#contentMenu li {
+	box-sizing: border-box;
+	height: 170px;
+	border: 1px solid #999;
+	width: 25%;
+	margin: -1px -1px 0px 0px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+#contentMenu li strong, #contentMenu li span {
+	display: block;
+	text-align: center;
+}
+
+#contentMenu li p {
+	margin-top: 20px;
+	text-align: center;
+}
