@@ -136,10 +136,6 @@ p#title {
 /***************************************
 		menu
 ***************************************/
-#menu {
-	display: flex;
-}
-
 #contentMenu {
 	display: flex;
 	flex-wrap: wrap;
@@ -153,7 +149,6 @@ p#title {
 	width: 25%;
 	margin: -1px -1px 0px 0px;
 	display: flex;
-	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 }
