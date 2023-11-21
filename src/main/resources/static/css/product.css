@@ -1,0 +1,94 @@
+@font-face {
+	font-family: 'omyu_pretty';
+	src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-01@1.0/omyu_pretty.woff2') format('woff2');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/***************************************
+		common
+***************************************/
+* {
+	margin: 0px;
+	font-family: 'omyu_pretty';
+	font-size: 18px;
+}
+
+#inner {
+	/*border: 1px solid red;*/
+	margin: auto;
+	margin-top: 190px;
+	margin-bottom: 200px;
+	width: 55%;
+}
+
+p#title {
+	font-size: 25px;
+	font-weight: 600;
+	margin-bottom: 20px;
+}
+
+button {
+	background: #F2C4D0;
+	border: none;
+	border-radius: 10px;
+	width: 80px;
+	height: 40px;
+	color: white;
+}
+
+
+/***************************************
+		state
+***************************************/
+#state {
+	border: 1px solid #999;
+	display: flex;
+	margin-bottom: 20px;
+}
+
+.stateDiv {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 20px auto;
+}
+
+.stateDiv .icon {
+	background: #0b174d;
+	padding: 10px;
+	border-radius: 50%;
+	width: 40px;
+	height: 40px;
+	margin: 0 10px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.stateDiv .icon .fa-solid {
+	font-size: 36px;
+}
+
+.content strong {
+	display: block;
+	margin-bottom: 5px;
+}
+
+.content span {
+	font-size: 25px;
+}
+
+
+/***************************************
+		table
+***************************************/
+table {
+	width: 100%;
+	border: 1px solid #444444;
+	border-collapse: collapse;
+}
+
+th, td {
+	border: 1px solid #444444;
+}

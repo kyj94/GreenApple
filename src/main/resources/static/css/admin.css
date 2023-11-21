@@ -64,6 +64,7 @@ button {
 	display: none;
 }
 
+
 /***************************************
 		sell
 ***************************************/
@@ -133,7 +134,7 @@ button {
 }
 
 #state #cs {
-	margin-left: 20px;
+	margin: 20px 0 0 20px;
 }
 
 #state #cs li {
@@ -153,10 +154,6 @@ button {
 /***************************************
 		menu
 ***************************************/
-#menu {
-	display: flex;
-}
-
 #contentMenu {
 	display: flex;
 	flex-wrap: wrap;
@@ -170,7 +167,6 @@ button {
 	width: 25%;
 	margin: -1px -1px 0px 0px;
 	display: flex;
-	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 }
