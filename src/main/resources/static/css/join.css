@@ -78,3 +78,7 @@ button {
 	height: 60px;
 	color: white;
 }
+
+button#btnJoin:hover {
+	cursor: pointer;
+}
