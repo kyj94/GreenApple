@@ -10,6 +10,7 @@
     <title>GreenApple</title>
     <link rel="stylesheet" href="http://localhost:9001/css/join.css">
     <script src="http://localhost:9001/js/jquery-3.6.4.min.js"></script>
+    <script src="http://localhost:9001/js/join.js"></script>
 </head>
 
 <body>
@@ -21,7 +22,7 @@
         <p id = "title">회원가입</p>
 
         <div id = "join">
-            <form name="joinForm" action="/join" method="post" style="width: 100%;">
+            <form name="joinForm" action="/joinForm" method="post" style="width: 100%;">
                 <table id = "joinTable">
                     <tr>
                         <th>아이디</th>
@@ -48,9 +49,15 @@
                     </tr>
 
                     <tr>
+                        <th>우편번호</th>
+                        <td><input type = "text" name = "zipcode" id = "zipcode"></td>
+                        <td><span id = "zipcodeCheck">안내문위치</span></td>
+                    </tr>
+
+                    <tr>
                         <th>주소</th>
-                        <td><input type = "text" name = "address" id = "address"></td>
-                        <td><span id = "addressCheck">안내문위치</span></td>
+                        <td><input type = "text" name = "addr" id = "addr"></td>
+                        <td><span id = "addrCheck">안내문위치</span></td>
                     </tr>
 
                     <tr>
@@ -60,14 +67,20 @@
                     </tr>
 
                     <tr>
+                        <th>이메일</th>
+                        <td><input type = "text" name = "email" id = "email"></td>
+                        <td><span id = "emailCheck">안내문위치</span></td>
+                    </tr>
+
+                    <tr>
                         <th>생일</th>
-                        <td><input type = "text" name = "birth" id = "birth"></td>
+                        <td><input type = "date" name = "birth" id = "birth"></td>
                         <td><span id = "birthCheck">안내문위치</span></td>
                     </tr>
                 </table>
 
                 <div id="buttonDiv">
-                    <button type="button">회원가입</button>
+                    <button type="submit" id="btnJoin">회원가입</button>
                 </div>
             </form>
         </div>

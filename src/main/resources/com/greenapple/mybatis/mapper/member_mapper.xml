@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.greenapple.greenapple.repository.MemberMapper">
+    <insert id="join" parameterType="com.greenapple.greenapple.dto.MemberDto">
+        INSERT INTO APPLE_MEMBER(MID, PASS, NAME, ZIPCODE, ADDR, PHONE, EMAIL, BIRTH)
+        VALUES (#{mid, jdbcType=VARCHAR}, #{pass, jdbcType=VARCHAR}, #{name, jdbcType=VARCHAR}, #{zipcode, jdbcType=VARCHAR}, #{addr, jdbcType=VARCHAR}, #{phone, jdbcType=VARCHAR}, #{email, jdbcType=VARCHAR}, #{birth, jdbcType=DATE})
+    </insert>
+
+
+</mapper>
