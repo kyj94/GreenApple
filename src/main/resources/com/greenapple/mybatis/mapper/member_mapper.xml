@@ -6,8 +6,9 @@
 
 <mapper namespace="com.greenapple.greenapple.repository.MemberMapper">
     <insert id="join" parameterType="com.greenapple.greenapple.dto.MemberDto">
-        INSERT INTO APPLE_MEMBER(MID, PASS, NAME, ZIPCODE, ADDR, PHONE, EMAIL, BIRTH)
-        VALUES (#{mid, jdbcType=VARCHAR}, #{pass, jdbcType=VARCHAR}, #{name, jdbcType=VARCHAR}, #{zipcode, jdbcType=VARCHAR}, #{addr, jdbcType=VARCHAR}, #{phone, jdbcType=VARCHAR}, #{email, jdbcType=VARCHAR}, #{birth, jdbcType=DATE})
+        INSERT INTO APPLE_MEMBER(MID, PASS, NAME, ZIPCODE, ADDR, PHONE, EMAIL, BIRTH, CNUMBER)
+        VALUES (#{mid, jdbcType=VARCHAR}, #{pass, jdbcType=VARCHAR}, #{name, jdbcType=VARCHAR}, #{zipcode, jdbcType=VARCHAR}, #{addr, jdbcType=VARCHAR},
+                #{phone, jdbcType=VARCHAR}, #{email, jdbcType=VARCHAR}, #{birth, jdbcType=DATE},'CNUM_'||LTRIM(TO_CHAR(SEQU_CNUMBER.NEXTVAL,'0000')))
     </insert>
 
 

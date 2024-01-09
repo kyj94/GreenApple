@@ -27,6 +27,23 @@
         <div id = "best">
             <p>BEST ITEMS</p>
 
+            <c:forEach var="bestItem" items="${best}">
+
+            <div class = "best">
+                <a>
+                    <div>
+                        <img src="http://localhost:9001/images/${bestItem.pfile}">
+                    </div>
+                    <div>
+                        <p>${bestItem.ptiem}</p>
+                        <p>${bestItem.pdprice}</p>
+                    </div>
+                </a>
+
+            </c:forEach>
+
+<%--
+
             <div class = "best">
                 베스트 아이템
             </div>
@@ -35,7 +52,7 @@
             </div>
             <div class = "best">
                 베스트 아이템
-            </div>
+            </div>--%>
 
         </div>
 
