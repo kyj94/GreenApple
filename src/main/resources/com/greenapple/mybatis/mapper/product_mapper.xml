@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.greenapple.greenapple.repository.ProductMapper">
+    <select id="best" resultType="com.greenapple.greenapple.dto.ProductDto">
+        SELECT *
+        FROM (   SELECT ROWNUM RNO, PID, PITEM, PPRICE, PDPRICE, PDIS, PSFILE, PCOUNT, PSTATE
+                 FROM APPLE_PRODUCT
+                 ORDER BY PCOUNT)
+        WHERE RNO BETWEEN 1 AND 9
+    </select>
+
+
+</mapper>
