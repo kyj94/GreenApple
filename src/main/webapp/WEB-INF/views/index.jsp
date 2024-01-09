@@ -26,8 +26,8 @@
 
         <div id = "best">
             <p>BEST ITEMS</p>
-
-            <c:forEach var="bestItem" items="${best}">
+            <jsp:include page="bestItem.jsp"></jsp:include>
+            <%--<c:forEach var="bestItem" items="${best}">
 
             <div class = "best">
                 <a>
@@ -35,12 +35,12 @@
                         <img src="http://localhost:9001/images/${bestItem.pfile}">
                     </div>
                     <div>
-                        <p>${bestItem.ptiem}</p>
+                        <p>${bestItem.pitem}</p>
                         <p>${bestItem.pdprice}</p>
                     </div>
                 </a>
 
-            </c:forEach>
+            </c:forEach>--%>
 
 <%--
 
